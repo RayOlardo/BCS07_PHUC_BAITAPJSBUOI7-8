@@ -143,8 +143,8 @@ function doiViTri(){
     //đặt biến arrNew
     var arrNew = [];
     //input: số người dùng nhập vào trong mảng(number);
-    var viTri1 = document.getElementById('btnNhapSo_7').value * 1;
-    var viTri2 = document.getElementById('btn2NhapSo_7').value * 1;
+    var viTri1 = document.getElementById('btnNhapSo_6').value * 1;
+    var viTri2 = document.getElementById('btn2NhapSo_6').value * 1;
     //các bước xử lý
     arr1.forEach(function(item){
         arrNew.push(item)
