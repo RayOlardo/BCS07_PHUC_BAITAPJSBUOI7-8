@@ -132,7 +132,28 @@ document.getElementById('btnNhapSo_5').onclick = function(){
     document.getElementById('ketQua_5').innerHTML = 'Số chẵn cuối cùng = ' + last;
 }
 //CÂU 6: ĐỔI VỊ TRÍ
+//viết hàm swap đổi vị trí index
+function swap(input, vt1, vt2){
+    var bienTam = input[vt1];
+    input[vt1] = input[vt2];
+    input[vt2] = bienTam
+}
 //DOM .onclick
+function doiViTri(){
+    //đặt biến arrNew
+    var arrNew = [];
+    //input: số người dùng nhập vào trong mảng(number);
+    var viTri1 = document.getElementById('btnNhapSo_7').value * 1;
+    var viTri2 = document.getElementById('btn2NhapSo_7').value * 1;
+    //các bước xử lý
+    arr1.forEach(function(item){
+        arrNew.push(item)
+    })
+    swap(arrNew,viTri1,viTri2);
+     //output: thay đổi đc vị trí index trong mảng;
+    //In ra màn hình;
+    document.getElementById('ketQua_6').innerHTML = 'Mảng sau khi đỗi là: ' + arrNew
+}
 
 
 //CÂU 7: SẮP XẾP TĂNG DẦN
@@ -150,6 +171,7 @@ document.getElementById('btnNhapSo_7').onclick = function(){
     document.getElementById('ketQua_7').innerHTML = 'thứ tự tăng dần: ' +
     arrSapXep.sort(function(a, b){return a - b});
 }
+
 
 //CÂU 8: TÌM SỐ NGUYÊN TỐ ĐẦU TIÊN
 //DOM .onclick
